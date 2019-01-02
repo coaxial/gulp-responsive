@@ -141,6 +141,7 @@ Configuration unit is an object:
 * [**embed**](http://sharp.dimens.io/en/stable/api-resize/#embed): Preserving aspect ratio, resize the image to the maximum `width` or `height` specified then `embed` on a `background` of the exact `width` and `height` specified, default is `false`.
 * [**ignoreAspectRatio**](http://sharp.dimens.io/en/stable/api-resize/#ignoreaspectratio): *Boolean* — Ignoring the aspect ratio of the input, stretch the image to the exact `width` and/or `height` provided via `resize`, default is `false`.
 * [**kernel**](http://sharp.dimens.io/en/stable/api/#resizewidth-height-options): *String* — The kernel to use for image **reduction**, defaulting to `lanczos3`.
+* [**position**](http://sharp.dimens.io/en/stable/api-resize/#parameters): *String* — The `options.position` parameter (cf. sharp documentation), defaulting to `center`.
 * [**background**](http://sharp.dimens.io/en/stable/api-colour/#background): [*Color*](https://www.npmjs.com/package/color) — Set the background for the embed and flatten operations, '#default is `fff`'.
 * [**flatten**](http://sharp.dimens.io/en/stable/api-operation/#flatten): *Boolean* — Merge alpha transparency channel, if any, with `background`, default is `false`.
 * [**negate**](http://sharp.dimens.io/en/stable/api-operation/#negate): *Boolean* — Produces the "negative" of the image, default is `false`.

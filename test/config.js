@@ -46,6 +46,7 @@ describe('gulp-responsive', function () {
       assert.equal(config[0].withoutChromaSubsampling, false);
       assert.equal(config[0].compressionLevel, 6);
       assert.equal(config[0].format, null);
+      assert.equal(config[0].position, 'center');
     });
 
     it('should not override specified values', function () {
@@ -81,6 +82,7 @@ describe('gulp-responsive', function () {
         withoutChromaSubsampling: 'test',
         compressionLevel: 'test',
         format: 'test',
+        position: 'test',
       }]);
 
       assert.equal(config.length, 1);
@@ -114,6 +116,7 @@ describe('gulp-responsive', function () {
       assert.equal(config[0].withoutChromaSubsampling, 'test');
       assert.equal(config[0].compressionLevel, 'test');
       assert.equal(config[0].format, 'test');
+      assert.equal(config[0].position, 'test');
     });
   });
 
@@ -198,6 +201,7 @@ describe('gulp-responsive', function () {
         withoutChromaSubsampling: 'test',
         compressionLevel: 'test',
         format: 'test',
+        position: 'test',
       };
       var config = prepareConfig([{
         name: 'gulp.png'
@@ -234,6 +238,7 @@ describe('gulp-responsive', function () {
       assert.equal(config[0].withoutChromaSubsampling, 'test');
       assert.equal(config[0].compressionLevel, 'test');
       assert.equal(config[0].format, 'test');
+      assert.equal(config[0].position, 'test');
     });
 
     it('should not override values specified per file', function () {
@@ -267,6 +272,7 @@ describe('gulp-responsive', function () {
         withoutChromaSubsampling: 'global',
         compressionLevel: 'global',
         format: 'global',
+        position: 'global',
       };
       var config = prepareConfig([{
         name: 'gulp.png',
@@ -300,6 +306,7 @@ describe('gulp-responsive', function () {
         withoutChromaSubsampling: 'test',
         compressionLevel: 'test',
         format: 'test',
+        position: 'test',
       }], globalConfig);
 
       assert.equal(config.length, 1);
@@ -333,6 +340,7 @@ describe('gulp-responsive', function () {
       assert.equal(config[0].withoutChromaSubsampling, 'test');
       assert.equal(config[0].compressionLevel, 'test');
       assert.equal(config[0].format, 'test');
+      assert.equal(config[0].position, 'test');
     });
   });
 });
